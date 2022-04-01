@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family:Elephant;
+    color: #1e3e4b;
+}
+
+body{
+    background: rgba(255,255,255,.99);
+}
+
+main{
+    margin: 0 auto;
+    max-width: 1020px;
+}
+.header{
+    position:sticky;
+    top: 0;
+    padding: 7px 20px;
+    display: flex;
+    align-items:center;
+    background: rgba(255,255,255,.99);
+    height: 50px;
+    z-index: 100;
+}
+.titulo{
+    font-family:Brush Script MT;
+    font-weight:791;
+    font-size:3.5rem;
+    letter-spacing:1.9px;
+    color:#a80907;
+    margin: 0 auto;
+    
+}
+
+.hero{
+    position: relative;
+    background-image: url(https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/seasonal/gingerbread-houses.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: calc(100vh - 50px);
+    overflow: hidden;
+}
+
+.hero-filtro{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgba(247, 247, 247, 0.3);
+}
+.hero p{
+    position:absolute;
+    z-index:10;
+    font-family:Elephant;
+    font-weight:791;
+    font-size:2.3rem;
+    letter-spacing:1.9px;
+    color:#a80907;
+    border-radius: 4px;
+    background: white;
+    top:127px;
+    padding:15px 15px 15px 33px;
+    max-width: 46%;
+}
+.hero p span{
+    font-size:1.2rem;
+    color:black;
+}
+.info{
+    padding:32px 20px;
+}
+.info h3{
+    text-align:center;
+    color:#a80907;
+    letter-spacing:2.1px;
+    font-weight:600;
+    font-size: 1.7rem;
+}
+
+.info p{
+    margin-top:9px;
+    text-align:center;
+    color:black;
+    letter-spacing:1.9px;
+    font-weight:normal;
+    font-size: 2.0rem;
+}
+
+.evento{
+    display:flex;
+    
+}
+.evento img{
+    width: 50%;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.evento-actividad{
+    list-style-type: none;
+    width: 50%;
+    padding: 40px;
+    color:black;
+    letter-spacing:1.0px;
+    font-weight: normal;
+    font-size: 1.4rem;
+    text-align: left;
+    align-self: center;
+}
+.evento-actividad li:first-child{
+    margin-bottom: 13px;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .hero p{
+        font-size:2.3rem;
+        max-width: 60%;
+    }
+}
